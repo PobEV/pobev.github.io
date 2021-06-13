@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/tiny-slider.css">
   <link rel="stylesheet" href="css/design.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <title>simplycity WEB</title>
@@ -60,23 +61,44 @@
       <div class="design-container-top">
 
         <div class="design-reference">
-          <a class="design-reference-link" href="images/design/ref_third_image.png" target="_blank">
-            <img class="design-reference-image" src="images/design/small/ref_third_image_small.jpg" alt="Office" title="Office">
-          </a>
+          <div class="reference-carousel">
+            <div>
+              <a class="design-reference-link" href="images/design/ref_first_image.png">
+                <img class="design-reference-image" src="images/design/small/ref_first_image_small.jpg" alt="Office" title="Office">
+              </a>
+            </div>
+            <div>
+              <a class="design-reference-link" href="images/design/ref_second_image.png">
+                <img class="design-reference-image" src="images/design/small/ref_second_image_small.jpg" alt="Office" title="Office">
+              </a>
+            </div>
+            <div>
+              <a class="design-reference-link" href="images/design/ref_third_image.png">
+                <img class="design-reference-image" src="images/design/small/ref_third_image_small.jpg" alt="Office" title="Office">
+              </a>
+            </div>
+          </div>
+
+          <button type="button" class="btn-prev">
+            <img src="images/design/small/prev.png" alt="Previous">
+          </button>
+          <button type="button" class="btn-next">
+            <img src="images/design/small/next.png" alt="Next">
+          </button>
         </div>
 
         <div class="design-brochures">
 
             <a class="design-brochures-link"
             href="files/design/simplycity_Brochure_RU.pdf" target="_blank">
-              <img class="design-brochures-image" src="images/design/small/brochures_Catalogue_small.png"
+              <img class="design-brochures-image" src="images/design/small/brochures_Catalogue_small.jpg"
               alt="Открыть каталог" title="Открыть каталог simplycity">
               <div class="title-catalogue">Каталог</div>
             </a>
 
             <a class="design-brochures-link"
             href="files/design/simplycity_sales_presentation_2020_RU.pdf" target="_blank">
-              <img class="design-brochures-image" src="images/design/small/brochures_Presentation_small.png"
+              <img class="design-brochures-image" src="images/design/small/brochures_Presentation_small.jpg"
               alt="Открыть презентацию" title="Открыть презентацию simplycity">
               <div class="title-presentation">Презентация</div>
             </a>
@@ -578,6 +600,9 @@
       </div> <!-- page-footer-right -->
     </div> <!-- page-footer-down -->
   </footer>
+
+<script src="js/tiny-slider.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
