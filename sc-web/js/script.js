@@ -18,3 +18,9 @@ document.querySelector('.btn-prev').addEventListener('click', function () {
 document.querySelector('.btn-next').addEventListener('click', function () {
   slider.goTo('next');
 });
+
+$('ul.design-tabs').on('click', 'li:not(.design-tabs__item_active)', function() {
+  $(this)
+    .addClass('design-tabs__item_active').siblings().removeClass('design-tabs__item_active')
+    .closest('div.design-container-bottom').find('main.design-elements').removeClass('design-elements_active').eq($(this).index()).addClass('design-elements_active');
+});
