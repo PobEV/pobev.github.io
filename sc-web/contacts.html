@@ -18,8 +18,8 @@
         <span class="settings-line-text">Привет, Евгений!</span>
       </div>
       <div class="settings-line-right">
-        <a class="settings-line-link" href="#">
-          <div class="hamburger 1hamburger-active">
+        <a class="menu-button" href="#">
+          <div class="hamburger">
             <span class=""></span>
             <span class=""></span>
             <span class=""></span>
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="navigation-line 1navigation-line-active">
+    <div class="navigation-line">
       <nav class="navigation-line-block">
         <a class="navigation-line-link" href="index.html">О лифте</a>
         <a class="navigation-line-link" href="technics.html">Технические характеристики</a>
@@ -44,8 +44,8 @@
         <a class="navigation-line-link" href="delivery.html">Условия поставки</a>
         <a class="navigation-line-link current-page" href="contacts.html">Контакты</a>
       </nav>
+      <div class="header-border"></div>
     </div>
-    <div class="header-border"></div>
   </header>
 
   <main class="std-content">
@@ -53,23 +53,28 @@
       <h2 class="std-title">Рады Вас видеть</h2>
       <div class="main-contacts">
 
-        <div class="main-contacts-top">
-          <div class="main-contacts-title">
-            ООО «ТК Элеватор»
-          </div>
-        </div>
-
-        <div class="main-contacts-down">
-          <div class="main-contacts-down-left">
+          <div class="main-contacts-left">
               <table class="main-contacts-table">
                 <tbody>
                   <tr>
-                    <td><img class="main-contacts-table-img" src="images/contacts/globe.svg" alt="Site"></td>
-                    <td><a class="std-link" href="https://thyssenkrupp-elevator.ru/" target="_blank">www.thyssenkrupp-elevator.ru</a></td>
+                    <td class="main-contacts-title" colspan="2">ООО «ТК Элеватор»</td>
                   </tr>
                   <tr>
-                    <td><img class="main-contacts-table-img" src="images/contacts/envelope.svg" alt="E-mail"></td>
-                    <td><a class="std-link" href="mailto:sales@tk-e.ru">sales@tk-e.ru</a></td>
+                    <td>
+                      <img class="main-contacts-table-img" src="images/contacts/location.svg" alt="Location">
+                    </td>
+                    <td>
+                      <a class="std-link"
+                      href="https://yandex.ru/maps/?rtext=~55.691765,37.662668=at"
+                      target="_blank" alt="Построить маршрут">
+                        115432 Россия, г. Москва, <br>
+                        Пр-т Андропова, 18к7, эт.5, офис 1
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="main-contacts-table-img" src="images/contacts/globe.svg" alt="Site"></td>
+                    <td><a class="std-link" href="https://thyssenkrupp-elevator.ru/" target="_blank">www.thyssenkrupp-elevator.ru</a></td>
                   </tr>
                   <tr>
                     <td><img class="main-contacts-table-img" src="images/contacts/phone-call.svg" alt="Phone"></td>
@@ -80,16 +85,19 @@
                     <td><a class="std-link" href="tel:+74959358519">+7 (495) 935-85-19</a></td>
                   </tr>
                   <tr>
+                    <td><img class="main-contacts-table-img" src="images/contacts/envelope.svg" alt="E-mail"></td>
+                    <td><a class="std-link" href="mailto:sales@tk-e.ru">sales@tk-e.ru</a></td>
+                  </tr>
+                  <tr>
                     <td><img class="main-contacts-table-img" src="images/contacts/calendar.svg" alt="Opening Hours"></td>
                     <td>Режим работы:</a></td>
                   </tr>
                   <tr>
                     <td></td>
                     <td>
-                      <ul class="std-ul">
-                        <li>Понедельник - Четверг: 09:00 - 18:00</li>
-                        <li>Пятница: 09:00 - 16:45</li>
-                        <li>Суббота, Воскресенье и Праздничные дни: Выходной</li>
+                      <ul class="contacts-ul">
+                        <li>ПН - ПТ: с 09:00 до 18:00 (пт. до 16:45)</li>
+                        <li>СБ - ВС и Праздничные дни: Выходной</li>
                       </ul>
                     </td>
                   </tr>
@@ -97,47 +105,14 @@
               </table>
           </div>
 
-          <div class="main-contacts-down-right">
-            <table class="main-contacts-table">
-              <tbody>
-                <tr>
-                  <td><img class="main-contacts-table-img" src="images/contacts/location.svg" alt="Phone"></td>
-                  <td>115432 Россия, г. Москва, Проспект Андропова, дом 18, корпус 7, этаж 5, офис 1</td>
-                </tr>
-                <tr>
-                  <td><img class="main-contacts-table-img" src="images/contacts/satellite.svg" alt="Phone"></td>
-                  <td>Широта: 55.691765, Долгота: 37.662668</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <div class="main-contacts-maps">
-              <div class="main-contacts-maps-block">
-                <a class="main-contacts-link" href="images/contacts/address.jpg" target="_blank">
-                  <div class="main-contacts-maps-btn">
-                    Добраться пешком <br>
-                    <img class="contact-maps-image" src="images/contacts/walking.svg"
-                    alt="Как добраться пешком" title="Как добраться пешком">
-                  </div>
-                </a>
-              </div>
-              <div class="main-contacts-maps-block">
-                <a class="main-contacts-link" href="https://yandex.ru/maps/?rtext=~55.691765,37.662668=at" target="_blank">
-                  <div class="main-contacts-maps-btn">
-                    Построить маршрут <br>
-                    <img class="contact-maps-image" src="images/contacts/by auto.svg"
-                    alt="Построить маршрут" title="Построить маршрут">
-                  </div>
-                </a>
-              </div>
+          <div class="main-contacts-right">
+            <div class="ya-map">
+              <script charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6371ad06bc812deeb0e0a99cb8a4613d23c29d4f8933114428c1f192c58cf017&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false">
+              </script>
             </div>
-
-            <!-- <div class="">
-              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6371ad06bc812deeb0e0a99cb8a4613d23c29d4f8933114428c1f192c58cf017&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=false"></script>
-            </div> -->
-
           </div> <!-- main-contacts-down-right -->
-        </div> <!-- main-contacts-down -->
+
       </div> <!-- main-contacts -->
     </div>
 
@@ -253,6 +228,9 @@
       </div> <!-- page-footer-right -->
     </div> <!-- page-footer-down -->
   </footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
