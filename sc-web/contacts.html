@@ -9,7 +9,7 @@
   <title>simplycity WEB</title>
 </head>
 
-<body class="page">
+<body id="up" class="page">
 
   <header class="page-header">
     <div class="settings-line">
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="navigation-line">
+    <div class="navigation-line navigation-line-default">
       <nav class="navigation-line-block">
         <a class="navigation-line-link" href="index.html">О лифте</a>
         <a class="navigation-line-link" href="technics.html">Технические характеристики</a>
@@ -67,8 +67,10 @@
                       <a class="std-link"
                       href="https://yandex.ru/maps/?rtext=~55.691765,37.662668=at"
                       target="_blank" alt="Построить маршрут">
-                        115432 Россия, г. Москва, <br>
-                        Пр-т Андропова, 18к7, эт.5, офис 1
+                        <address>
+                          115432 Россия, г. Москва, <br>
+                          Пр-т Андропова, 18к7, эт.5, офис 1
+                        </address>
                       </a>
                     </td>
                   </tr>
@@ -161,7 +163,7 @@
             name="Name" placeholder="Григорий Печорин" id="name">
 
             <label for="tel">Ваш телефон:</label>
-            <input class="contact-feedback-form-input" type="tel" required
+            <input class="contact-feedback-form-input" required
             name="Phone" placeholder="+7 (123) 456-78-90" id="tel">
 
             <label for="email">Ваш e-mail:</label>
@@ -186,6 +188,13 @@
         </div>
       </form> <!-- contact-feedback, form -->
     </div>
+
+    <div class="go-up">
+      <a href="#up">
+        <img src="images/go-up.png" alt="Наверх">
+      </a>
+    </div>
+
   </main> <!-- std-content -->
 
   <footer class="footer">
@@ -193,15 +202,15 @@
     <div class="footer-down">
       <div class="footer-down-left">
         <div class="footer-down-left__wrapper">
-          <div class="footer-down-left-item">
+          <div class="footer-down-left-item footer-down-left-item-border">
             ООО «ТК Элеватор»
           </div>
-          <div class="footer-down-left-item">
+          <div class="footer-down-left-item footer-down-left-item-border">
             <a class = "footer-link" href="tel:+74959358517">+7 (495) 935-85-17/18</a>
           </div>
         </div>
         <div class="footer-down-left__wrapper">
-          <div class="footer-down-left-item">
+          <div class="footer-down-left-item footer-down-left-item-border">
             <a class = "footer-link" href="https://www.tkelevator.ru/" target="_blank">www.tkelevator.ru</a>
           </div>
           <div class="footer-down-left-item">
@@ -230,6 +239,7 @@
   </footer>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>
