@@ -29,8 +29,6 @@ $(document).ready(function() {
     }
   });
 
-  new WOW().init();
-
   function showContactIcons(personPhone, personIcon) {
     $(personPhone).on('click', function(i) {
       i.preventDefault();
@@ -40,5 +38,7 @@ $(document).ready(function() {
 
   showContactIcons('#open-contact-mir', '.contact-icon_mir');
   showContactIcons('#open-contact-cher', '.contact-icon_cher');
+
+  new WOW().init();
 
 });
