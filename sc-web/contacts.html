@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/contacts.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <title>simplycity WEB</title>
@@ -12,6 +13,7 @@
 <body id="up" class="page">
 
   <header class="page-header">
+
     <div class="settings-line">
       <div class="settings-line-left">
         <img class="tke-icon" src="images/tke_logo_cut_white.png" alt="TKE logo">
@@ -34,18 +36,32 @@
       </div>
     </div>
 
-    <div class="navigation-line navigation-line-default">
-      <nav class="navigation-line-block">
-        <a class="navigation-line-link" href="index.html">О лифте</a>
-        <a class="navigation-line-link" href="technics.html">Технические характеристики</a>
-        <a class="navigation-line-link" href="documentation.html">Документация</a>
-        <a class="navigation-line-link" href="design.html">Дизайн</a>
-        <a class="navigation-line-link" href="calculation.html">Расчёт стоимости</a>
-        <a class="navigation-line-link" href="delivery.html">Условия поставки</a>
-        <a class="navigation-line-link current-page" href="contacts.html">Контакты</a>
+    <div class="navline navline_default">
+      <nav class="navline__block">
+        <a class="navline__link" href="index.html">О лифте</a>
+        <a class="navline__link" href="technics.html">Технические характеристики</a>
+        <a class="navline__link" href="documentation.html">Документация</a>
+        <a class="navline__link" href="design.html">Дизайн</a>
+        <a class="navline__link" href="calculation.html">Расчёт стоимости</a>
+        <a class="navline__link" href="delivery.html">Условия поставки</a>
+        <a class="navline__link current-page" href="contacts.html">Контакты</a>
       </nav>
-      <div class="header-border"></div>
+      <div class="navline__border"></div>
     </div>
+
+    <div class="navline navline_popup">
+      <nav class="navline__block">
+        <a class="navline__link" href="index.html">О лифте</a>
+        <a class="navline__link" href="technics.html">Технические характеристики</a>
+        <a class="navline__link" href="documentation.html">Документация</a>
+        <a class="navline__link" href="design.html">Дизайн</a>
+        <a class="navline__link" href="calculation.html">Расчёт стоимости</a>
+        <a class="navline__link" href="delivery.html">Условия поставки</a>
+        <a class="navline__link current-page" href="contacts.html">Контакты</a>
+      </nav>
+      <div class="navline__border"></div>
+    </div>
+
   </header>
 
   <main class="std-content">
@@ -118,7 +134,9 @@
       </div> <!-- main-contacts -->
     </div>
 
-    <div class="std-content-block">
+    <div class="std-content-block
+    wow animate__animated animate__fadeInUp"
+    data-wow-duration="0.6s" data-wow-offset="40">
       <h2 class="std-title">Готовы Вам помочь</h2>
       <div class="contact-who">
         <div class="contact-who-block">
@@ -131,9 +149,20 @@
             <small>
               Директор CSC Москва <br>
               e-mail: <a class="std-link" href="mailto:artemij.miroshnikov@tkelevator.com">artemij.miroshnikov@tkelevator.com</a> <br>
-              Моб.: <a class="std-link" href="tel:+79250072826">+7 925 007-28-26</a>
+              Моб.: <a class="std-link" id="open-contact-mir" href="#">+7 925 007-28-26</a>
             </small>
           </p>
+
+          <a class="contact-icon contact-icon_mir contact-icon_call"
+            href="tel:+79250072826" alt="Позвонить">
+            <img src="images/contacts/call.svg">
+          </a>
+
+          <a class="contact-icon contact-icon_mir contact-icon_wa"
+          href="https://api.whatsapp.com/send/?phone=79250072826" target="_blank" alt="WhatsApp">
+            <img src="images/contacts/whatsapp.svg">
+          </a>
+
         </div>
 
         <div class="contact-who-block">
@@ -146,28 +175,41 @@
             <small>
               Менеджер по продукту <br>
               e-mail: <a class="std-link" href="mailto:daniil.chernyavskiy@tkelevator.com">daniil.chernyavskiy@tkelevator.com</a> <br>
-              Моб.: <a class="std-link" href="tel:+79269904312">+7 926 990-43-12</a>
+              Моб.: <a class="std-link" id="open-contact-cher" href="#">+7 926 990-43-12</a>
             </small>
           </p>
+
+          <a class="contact-icon contact-icon_cher contact-icon_call"
+            href="tel:+79269904312" alt="Позвонить">
+            <img src="images/contacts/call.svg">
+          </a>
+
+          <a class="contact-icon contact-icon_cher contact-icon_wa"
+          href="https://api.whatsapp.com/send/?phone=79269904312" target="_blank" alt="WhatsApp">
+            <img src="images/contacts/whatsapp.svg">
+          </a>
+
         </div>
       </div>
     </div>
 
-    <div class="std-content-block">
+    <div class="std-content-block
+    wow animate__animated animate__fadeInUp"
+    data-wow-duration="0.6s" data-wow-offset="40">
       <h2 class="std-title">Благодарны за отзывы и предложения</h2>
       <form class="contact-feedback" action="/" method="post">
         <div class="contact-feedback-top">
           <div class="contact-feedback-left">
             <label for="name">Ваше имя:</label>
-            <input class="contact-feedback-form-input" type="text" required
+            <input class="contact-feedback-form-input" type="text"
             name="Name" placeholder="Григорий Печорин" id="name">
 
             <label for="tel">Ваш телефон:</label>
-            <input class="contact-feedback-form-input" required
+            <input class="contact-feedback-form-input"
             name="Phone" placeholder="+7 (123) 456-78-90" id="tel">
 
             <label for="email">Ваш e-mail:</label>
-            <input class="contact-feedback-form-input" type="email" required
+            <input class="contact-feedback-form-input" type="email"
             name="Email" placeholder="g.pechorin@email.com" id="email">
 
             <label for="file">Добавьте файл:</label>
@@ -177,7 +219,7 @@
 
           <div class="contact-feedback-right">
             <label for="feedback">Ваши отзывы и предложения:</label>
-            <textarea class="contact-feedback-textarea" required name="Feedback"
+            <textarea class="contact-feedback-textarea" name="Feedback"
             placeholder="simplycity - лучший лифт!" id="feedback"></textarea>
           </div>
         </div>
@@ -240,6 +282,9 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/script-contacts.js"></script>
 <script src="js/script.js"></script>
 
 </body>
