@@ -41,19 +41,25 @@ $(document).ready(function() {
 
   new WOW().init();
 
-  $('form').submit(function(e) {
-    e.preventDefault();
-    $.ajax({
-      type: 'POST',
-      url: 'smart.php',
-      data: $(this).serialize()
-    }).done(function(){
-      $(this).find('input').val('');
-      $(this).trigger('reset');
-      jQuery('.feedback-btn').blur();
-      alert('Thank you for your feedback!');
+  function sendEmail(i) {
+    $(i).submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+        type: "POST",
+        url: "smart.php",
+        data: $(i).serialize()
+      }).done(function() {
+        $(i).find("input").val("");
+        $(i).find("textarea").val("");
+        $(i).trigger('reset');
+        $(".feedback-btn").blur();
+        alert('Thank you for your feedback!');
+      });
+      return false;
     });
-    return false;
-  });
+  };
+
+  $("#sendme").onCLick(sendEmail("form"));
+
 
 });
