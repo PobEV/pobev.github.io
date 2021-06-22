@@ -41,4 +41,18 @@ $(document).ready(function() {
 
   new WOW().init();
 
+  $('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: 'smart.php',
+      data: $(this).serialize()
+    }).done(function(){
+      $(this).find('input').val('');
+      alert('Thank you for your feedback!');
+      $('form').trigger('reset');
+    });
+    return false;
+  });
+
 });
