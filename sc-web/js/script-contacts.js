@@ -49,8 +49,9 @@ $(document).ready(function() {
       data: $(this).serialize()
     }).done(function(){
       $(this).find('input').val('');
+      $(this).trigger('reset');
+      jQuery('.feedback-btn').blur();
       alert('Thank you for your feedback!');
-      $('form').trigger('reset');
     });
     return false;
   });

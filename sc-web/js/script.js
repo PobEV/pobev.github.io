@@ -20,7 +20,6 @@ $(document).ready(function() {
     }
   });
 
-  console.log($(document).outerHeight(true)/2)
   $(window).scroll(function() {
     if ($(this).scrollTop() > $(document).outerHeight(true)/3) {
       $('.go-up').fadeIn();
