@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <link rel="preconnect" href="//api-maps.yandex.ru">
+  <link rel="dns-prefetch" href="//api-maps.yandex.ru">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/contacts.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.webp">
+  <title>simplycity WEB</title>
+</head>
+
+<body id="up" class="page">
+
+  <header class="page-header">
+
+    <div class="settings-line">
+      <div class="settings-line__block">
+        <img class="settings-line__icon settings-line__icon_tke"
+        src="images/tke_logo_cut_white.png" alt="TKE logo">
+        <span class="settings-line__text">Привет, Евгений!</span>
+      </div>
+      <div class="settings-line__block settings-line__block_relative">
+        <a class="menu-button" href="#">
+          <div class="hamburger">
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+          </div>
+          <span class="settings-line__text">МЕНЮ</span>
+        </a>
+        <a class="settings-line__link" href="#">RU</a>
+        <a class="settings-line__link" href="#">EN</a>
+        <a class="settings-line__link" href="#">
+          <img class="settings-line__icon settings-line__icon_settings"
+          src="images/settings.svg" alt="Site settings">
+        </a>
+      </div>
+    </div>
+
+    <div class="navline navline_default">
+      <nav class="navline__block">
+        <a class="navline__link" href="index.html">О лифте</a>
+        <a class="navline__link" href="technics.html">Технические характеристики</a>
+        <a class="navline__link" href="documentation.html">Документация</a>
+        <a class="navline__link" href="design.html">Дизайн</a>
+        <a class="navline__link" href="calculation.html">Расчёт стоимости</a>
+        <a class="navline__link" href="delivery.html">Условия поставки</a>
+        <a class="navline__link current-page" href="contacts.html">Контакты</a>
+      </nav>
+      <div class="navline__border"></div>
+    </div>
+
+    <div class="navline navline_popup">
+      <nav class="navline__block">
+        <a class="navline__link" href="index.html">О лифте</a>
+        <a class="navline__link" href="technics.html">Технические характеристики</a>
+        <a class="navline__link" href="documentation.html">Документация</a>
+        <a class="navline__link" href="design.html">Дизайн</a>
+        <a class="navline__link" href="calculation.html">Расчёт стоимости</a>
+        <a class="navline__link" href="delivery.html">Условия поставки</a>
+        <a class="navline__link current-page" href="contacts.html">Контакты</a>
+      </nav>
+      <div class="navline__border"></div>
+    </div>
+
+  </header>
+
+  <main class="std-content">
+    <section class="std-content__block">
+      <h2 class="std-title">Рады Вас видеть</h2>
+      <div class="main-contacts">
+
+          <div class="main-contacts__left">
+              <table class="main-contacts__table">
+                <tbody>
+                  <tr>
+                    <td class="main-contacts__title" colspan="2">ООО «ТК Элеватор»</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="main-contacts__image" src="images/contacts/location.svg" alt="Location">
+                    </td>
+                    <td>
+                      <a class="std-link"
+                      href="https://yandex.ru/maps/?rtext=~55.691765,37.662668=at" target="_blank">
+                        <address class="std-address">
+                          115432 Россия, г. Москва, <br>
+                          Пр-т Андропова, 18к7, эт.5, офис 1
+                        </address>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img class="main-contacts__image" src="images/contacts/globe.svg" alt="Site"></td>
+                    <td><a class="std-link" href="https://thyssenkrupp-elevator.ru/" target="_blank">www.thyssenkrupp-elevator.ru</a></td>
+                  </tr>
+                  <tr>
+                    <td><img class="main-contacts__image" src="images/contacts/phone-call.svg" alt="Phone"></td>
+                    <td><a class="std-link" href="tel:+74959358517">+7 (495) 935-85-17/18</a></td>
+                  </tr>
+                  <tr>
+                    <td><img class="main-contacts__image" src="images/contacts/fax.svg" alt="Fax"></td>
+                    <td><a class="std-link" href="tel:+74959358519">+7 (495) 935-85-19</a></td>
+                  </tr>
+                  <tr>
+                    <td><img class="main-contacts__image" src="images/contacts/envelope.svg" alt="E-mail"></td>
+                    <td><a class="std-link" href="mailto:sales@tk-e.ru">sales@tk-e.ru</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="main-contacts__image" src="images/contacts/calendar.svg" alt="Opening Hours">
+                    </td>
+                    <td>Режим работы:</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <ul class="std-ul">
+                        <li class="std-ul__item">ПН - ПТ: с 09:00 до 18:00 (пт. до 16:45)</li>
+                        <li class="std-ul__item">СБ - ВС и Праздничные дни: Выходной</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+
+          <div class="main-contacts__right">
+            <div class="ymap-container">
+              <div class="loader loader-default"></div>
+              <div id="map-yandex"></div>
+            </div><!-- .ymap-container -->
+          </div> <!-- main-contacts-down-right -->
+
+      </div> <!-- main-contacts -->
+    </section>
+
+    <section class="std-content__block
+    wow animate__animated animate__fadeInUp"
+    data-wow-duration="0.5s" data-wow-offset="150">
+      <h2 class="std-title">Готовы Вам помочь</h2>
+      <div class="contact-who">
+        <div class="contact-who__block">
+          <img class="contact-who__miroshnikov" src="images/contacts/miroshnikov.webp"
+          alt="Артемий Мирошников" title="Артемий Мирошников">
+          <p>
+            Мирошников Артемий
+          </p>
+          <p>
+            <small>
+              Директор CSC Москва <br>
+              e-mail: <a class="std-link" href="mailto:artemij.miroshnikov@tkelevator.com">artemij.miroshnikov@tkelevator.com</a> <br>
+              <span class="contact-wrapper">
+                Моб.:<a class="std-link" id="open-contact-mir" href="#">+7 925 007-28-26</a>
+
+                <a class="contact-icon contact-icon_mir contact-icon_call"
+                  href="tel:+79250072826">
+                  <img src="images/contacts/call.svg" alt="Позвонить">
+                </a>
+
+                <a class="contact-icon contact-icon_mir contact-icon_wa"
+                href="https://api.whatsapp.com/send/?phone=79250072826" target="_blank">
+                  <img src="images/contacts/whatsapp.svg" alt="WhatsApp">
+                </a>
+              </span>
+            </small>
+          </p>
+        </div>
+
+        <div class="contact-who__block">
+          <img class="contact-who__chernyavskiy" src="images/contacts/chernyavskiy.webp"
+          alt="Даниил Чернявский" title="Даниил Чернявский">
+          <p>
+            Чернявский Даниил
+          </p>
+          <p>
+            <small>
+              Менеджер по продукту <br>
+              e-mail: <a class="std-link" href="mailto:daniil.chernyavskiy@tkelevator.com">daniil.chernyavskiy@tkelevator.com</a> <br>
+              <span class="contact-wrapper">
+                Моб.: <a class="std-link" id="open-contact-cher" href="#">+7 926 990-43-12</a>
+
+                <a class="contact-icon contact-icon_cher contact-icon_call"
+                  href="tel:+79269904312">
+                  <img src="images/contacts/call.svg" alt="Позвонить">
+                </a>
+
+                <a class="contact-icon contact-icon_cher contact-icon_wa"
+                href="https://api.whatsapp.com/send/?phone=79269904312" target="_blank">
+                  <img src="images/contacts/whatsapp.svg" alt="WhatsApp">
+                </a>
+              </span>
+
+            </small>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="std-content__block
+    wow animate__animated animate__fadeInUp"
+    data-wow-duration="0.5s" data-wow-offset="75">
+      <h2 class="std-title">Благодарны за отзывы и предложения</h2>
+      <form class="contact-feedback" action="/" method="post">
+        <div class="contact-feedback__top">
+          <div class="contact-feedback__left">
+            <label for="name">Ваше имя:</label>
+            <input class="contact-feedback__form-input" type="text"
+            name="Name" placeholder="Григорий Печорин" id="name">
+
+            <label for="tel">Ваш телефон:</label>
+            <input class="contact-feedback__form-input"
+            name="Phone" placeholder="+7 (123) 456-78-90" id="tel">
+
+            <label for="email">Ваш e-mail:</label>
+            <input class="contact-feedback__form-input" type="email"
+            name="Email" placeholder="g.pechorin@email.com" id="email">
+
+            <label for="file">Добавьте файл:</label>
+            <input class="contact-feedback__form-file" type="file"
+            name="File" id="file">
+          </div>
+
+          <div class="contact-feedback__right">
+            <label for="feedback">Ваши отзывы и предложения:</label>
+            <textarea class="contact-feedback__form-textarea" name="Feedback"
+            placeholder="simplycity - лучший лифт!" id="feedback"></textarea>
+          </div>
+        </div>
+
+        <div class="contact-feedback__bottom">
+          <button class="feedback-btn" id="sendForm" type="reset" name="reset">Очистить</button>
+          <button class="feedback-btn" id="clearForm" type="submit" name="submit">Отправить</button>
+        </div>
+      </form> <!-- contact-feedback, form -->
+    </section>
+
+    <div class="go-up">
+      <a href="#up">
+        <img class="go-up__image" src="images/go-up.webp" alt="Наверх">
+      </a>
+    </div>
+
+    <div class="overlay">
+      <div class="modal">
+        <div class="modal__text">Спасибо за Ваш отзыв!</div>
+        <button class="modal__close">Ok</button>
+      </div>
+    </div>
+
+  </main> <!-- std-content -->
+
+  <footer class="page-footer">
+    <div class="page-footer__edge"> </div>
+    <div class="page-footer__main-block">
+
+      <div class="page-footer__left">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__contact page-footer__contact_border">
+            ООО «ТК Элеватор»
+          </div>
+          <div class="page-footer__contact page-footer__contact_border">
+            <a class = "page-footer__link" href="tel:+74959358517">+7 (495) 935-85-17/18</a>
+          </div>
+        </div>
+        <div class="page-footer__wrapper">
+          <div class="page-footer__contact page-footer__contact_border">
+            <a class = "page-footer__link" href="https://www.tkelevator.ru/" target="_blank">www.tkelevator.ru</a>
+          </div>
+          <div class="page-footer__contact">
+            <a class = "page-footer__link" href="mailto:sales@tk-e.ru">sales@tk-e.ru</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer__right">
+        <a class="page-footer__link" href="https://www.instagram.com/tke.russia/" target="_blank">
+          <img class="page-footer__image" src="images/instagram.svg" alt="Instagram link">
+        </a>
+        <a class="page-footer__link" href="https://www.linkedin.com/company/tke-global/" target="_blank">
+          <img class="page-footer__image" src="images/linkedin.svg" alt="LinkedIn link">
+        </a>
+        <a class="page-footer__link" href="https://www.facebook.com/TKE.Global" target="_blank">
+          <img class="page-footer__image" src="images/facebook.svg" alt="Facebook link">
+        </a>
+        <a class="page-footer__link" href="https://twitter.com/TKE_Global" target="_blank">
+          <img class="page-footer__image" src="images/twitter.svg" alt="Twitter link">
+        </a>
+        <a class="page-footer__link" href="https://www.youtube.com/channel/UCMlk2PG6wp5wjK-UAMqUXXQ" target="_blank">
+          <img class="page-footer__image" src="images/youtube.svg" alt="YouTube link">
+        </a>
+      </div> <!-- page-footer__right -->
+
+    </div> <!-- page-footer__block -->
+  </footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/script-contacts.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
