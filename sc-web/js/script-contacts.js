@@ -169,4 +169,6 @@ $(document).ready(function() {
     $(".overlay").fadeOut();
   });
 
+  new ClipboardJS('.btn');
+
 });
